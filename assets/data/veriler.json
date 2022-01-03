@@ -1,0 +1,537 @@
+[
+    {
+        "vucut_bolge" : "Boyun",
+        "vucut_foto" : "assets/img/boyun.png",
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Boyun Egzersizi (İleri-Geri)",
+                "teknik" : "Başınız ve boynunuz doğal pozisyonundakyen iki elinizi de alnınızda birleştirin.Şimdi kıpırmayacak kadar direnç gösterecek ancak çok da zorlamayacak şekilde kafanızı geriye doğru itin.Düşük gerginlikle başlayıp yavaşça kuvveti arttırın.Bu gerilme esnasında normal nefes alışverişinize devam edin." ,
+                "foto" : [
+                    "assets/img/ilerigeri.png",
+                    "assets/img/ilerigerii.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Yatarak Sırtüstü Boyun",
+                "teknik" :"Bench'e sırtüstü olarak, kafa kısmı havada kalacak şekilde uzanın ve ellerinizi alnınızda bir ağırlığı tutarken birleştirin. İpucu: Bench'deki pozisyonunuz çok önemli.Omuzlar bench'in dışında olmalı ki, hareket etmesi gereken trapez, boyun ve yüz de serbest olsun.Bu başlangıç pozisyonunuz olacak. Ağırlığı alnınızda tutarken yavaşça kafanızı geri doğru eğin ve nefes alın. Kafanızı önce başlangıç pozisyonuna, daha sonra da daha yukarı çıkarken nefes verin.Kasılmaya odaklanın ve 1 saniye bekleyin.Daha sonra da başlangıç pozisyonuna dönün.Tavsiye edilen sayıda tekrar yapın.",             
+                "foto" : [
+                    "assets/img/sırtustu1.png",
+                    "assets/img/sırtustu2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Yatarak Yüzüstü Boyun",
+                "teknik" : "Bench'e yüzüstü olarak kafa kısmı havada kalacak şekilde uzanın ve ellerinizi başınızın arkasında bir ağırlık ile birleştirin. İpucu: Bench'deki pozisyonunuz çok önemli.Omuzlar bench'in dışında olmalı ki hareket etmesi gereken üst göğüs,boyun ve yüz de serbest olsun.Bu başlangıç pozisyonunuz olacak.Ağırlığı başınızın arkasında tutarken yavaşça kafanızı aşağı doğru eğin ve nefes alın. Kafanızı önce başlangıç pozisyonuna,daha sonra da daha yukarı çıkarken nefes verin. Kasılmaya odaklanın ve 1saniye bekleyin. Daha sonra da başlangıç pozisyonuna dönün. Tavsiye edilen sayıda tekrar yapın"                ,
+                "foto" : [
+                    "assets/img/yuzustu1.png",
+                    "assets/img/yuzustu2.png"
+                ]
+
+            }
+        ]
+    },
+    {
+        "vucut_bolge" : "Omuzlar",
+        "vucut_foto" : "assets/img/omuz.png",
+
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Dirsek Çevirme",
+                "teknik" :"Bu egzersizi ayakta ya da bacaklarınız biraz açık halde oturarak da yapabilirsiniz.Ellerinizi omuzlarınıza yerleştirin ve dirseklerinizi de dışarıya bakacak şekilde omuz hizanıza getirin.Yavaşça dirseklerinizi dairesel hareketlerle çevirin.Daireye başlarken nefes verin,tamamlarken nefes alın.",
+                "foto" : [
+                    "assets/img/dirsekcevirme1.png",
+                    "assets/img/dirsekcevirme2.png"
+                ]
+            },
+            {
+                "hareket_adi" : "Kol Çevirme",
+                "teknik" : "Ayakta dururken kollarınızı iki yana düz bir şekilde açın.Kollarınız,yere paralel,vücudunuza dik olmalıdır.Bu başlangıç pozisyonunuz olacak.Yavaşça kollarınızla 30 santim çapında daireler oluşturacak şekilde kollarınızı gergin bir şekilde çevirmeye başlayın.Nefes alışverişiniz normal olsun.Bu dairesel hareketlere 10 saniye kadar devam edin.Sonra durup ters yönde hareketi tekrar edin.",
+                "foto" : [
+                    "assets/img/kolcevirme1.png",
+                    "assets/img/kolcevirme2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Demir Haç ( Iron Cross )",
+                "teknik" : "İki elinize ağırlıkları alarak bacaklarınızı omuz genişliğinde açarak ayakta durun.Şimdi vücudunuz büyük bir 'T' harfi yapacak şekilde kollarınızı iki yana açın.Kollarınız yere paralel,vücudunuza dik bir şekilde duruyor avuç içleriniz de ileri bakıyor olmalı.Bu başlangıç pozisyonunuz olacak.Nefes alarak,yavaşça sırtı dik tutmak sureityle sanki sandalyeye oturacak gibi dizlerinizi kırarak eğilin.Harekete üst bacaklarınız yere paralel olacak seviyeye gelene kadar devam edin.Eğilme esnasında,aynı zamanda kollarınızın avuç içleri birbirine bakacak şekilde öne doğru getirin.Şimdi topuklarınızdan iterek ayağa kalkarken,kollarınızı tekrar yanlara doğru açın ve en baştaki T harfini oluşturun.Egzersizin bu aşamasında nefesinizi verin.Tavsiye edilen tekrar sayısına ulaşana kadar egzersize devam edin.",
+                "foto" : [
+                    "assets/img/demirhac1.png",
+                    "assets/img/demirhac2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Arnold Dambıl Pres",
+                "teknik" : "Sırt desteği olan bir bench'e iki elinizde egzersiz esnasoında kullanacağınız dambılları alarak oturun.Dambılları üst göğsünüz hizasında avuç içleriniz size bakacak şekilde yan yana tutun.Başlangıç pozisyonunuz sanki Biceps çalışıyormussunuz da kasılma aşamasındaymışsınız gibi olmalı.Şimdi bir yandan ağırlıkları avuç içleri ileri bakacak şekilde döndürürken bir yandan da yukarı kaldırın.Kollarınız tamamen düz olacak şekilde gelene kadar ağırlıkları kaldırın.",
+                "foto" : [
+                    "assets/img/arnold1.png",
+                    "assets/img/arnold2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Bradford/Rocky Pres",
+                "teknik" : "Dik şekilde ayarlanmış bir bench'e oturun ve ağırlığı omuz hizanızda avauç içleriniz aşağı bakacak şekildel tutun.Ağırlığı düzgün bir şekilde kavradıktan sonra kaldırarak başınızın üstüne getirin ve dirseklerinizi kilitleyin.Ağırlığı yavaşça başınızın arkasına indirerek nefes alın.Şimdi başüstü pozisyonuna getirin ve nefesinizi verin.Tekrar nefes alarak ilk pozisyonunuza dönün",
+                "foto" : [
+                    "assets/img/bradford1.png",
+                    "assets/img/bradford2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Tek El Dambıl Omuz Pres",
+                "teknik" : "Elinize çalışacağınız ağırlığı alarak, ister sırt desteği olan bir bench'e oturun,isterseniz de ayakta dik bir şekilde pozisyon alın.Ağırlığı kaldırarak omuz hizasına getirin.Diğer elinizi boşta bırakabilir,belinize koyabilir ya da baş bir yerden denge almak için kullanabilirsiniz.Bileğinizi avuç içiniz ileri bacak şekilde döndürün.Bu başlangıç pozisyonunuz olacak.Nefesinizi vererek,ağırlığı itebildiğiniz kadar itin.",
+                "foto" : [
+                    "assets/img/tekeldambıl1.png",
+                    "assets/img/tekeldambıl2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Adımla Tek Kol Kettlebell İtme",
+                "teknik" : "Kettlebell'i elinize alın ve belinize çok yüklenmeden avuç içiniz ileri bakacak şekilde pozisyonunuz olacak.Vücudunuz dik bir şekilde,dizlerinizi bükerek aşağı doğru eğilin.Birden ters yöne hareketle,topuklarınızdan iterek hafif sıçrama hareketiyle tek dizinizin üstüne inin.Bir bacağınız ileride diğeri geride olacak.Bu momentum yaratacak.Bu momentumu kullanarak ağırlığı başınızın üstüne kaldırın ve dirseğinizi kitleyin.Ağırlığı hala kaldırıyorken ayağa kalkın.Ağırlığı omuzunuza indirerek bir sonraki tekrara hazırlanın",
+                "foto" : [
+                    "assets/img/tekkolitme.png",
+                    "assets/img/tekkolitme2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Kettlebell Arnold Pres",
+                "teknik" : "Ketllebell'i avuç içleriniz içe bakacak şekilde dikkatli birş ekilde belinize çok yüklenmemeye dikkat ederek,omuzunuza kaldırın.İleri doğru bakarak,ağırlığı başınızın üstüne kaldırın ve kaldırma hareketini yaparken ağırlığı bileğinizden çevirerek avuç içlerinin ileri bakmasını sağlayın.Egzersizin bu aşamasında nefesinizi verin.Daha sonra nefes alarak,ağırlığı omuz seviyenize indirin ve tavsiye edilen tekrar sayısına ulaşana kadar çalışmaya devam edin.",
+                "foto" : [
+                    "assets/img/kettlebel1.png",
+                    "assets/img/kettlebell2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Makinede Omuz Pres",
+                "teknik" : "Shoulder Press İstasyonuna oturun ve çalışacağınız ağırlığı seçiniz.Dirsekler kırık bir şekilde kollardan tutun.Bu başlangıç pozisyonunuz olacak.Şimdi kolları yukarı iterek nefesinizi verin,egzersize kollarınız tamamen gergin olana kadar devam edin.",
+                "foto" : [
+                    "assets/img/makinedeomuz1.png",
+                    "assets/img/makinedeomuz2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Smith Machine Başüstü Omuz Pres",
+                "teknik" : "Başlangıç olarak düz bir bench'i smith machine'in altına koyun.Ağırlığın yüksekliğini dikkatli ayarlayın.Ağırlığı kollarınız dik olduğu zaman kontrol edebilecek bir seviyeye getirin.Doğru yüksekliğe ağırlığı ayarladıktan sonra,halterin biraz gerisine doğru oturun.Sanki burnunuzun ucuyla ağırlık arkasında hayali çizgide hizalanmış gibi.Ayaklarınız sabit ve yere sağlam basıyor olmalı.Avuç içleriniz yukarı bakar şekilde ağırlığı kavrayın,smith machine'in kilidini açıp ağırlığı yukarı kaldırın.Bu başlangıç pozisyonunuz olacak.Nefes alarak yavaşça ağırlığı göğsünüze doğru indirin.Sonra ağırlığı başlangıç pozisyonuna gelene kadar yukarı itin ve nefesinizi verin.",
+                "foto" : [
+                    "assets/img/smith1.png",
+                    "assets/img/smith2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Ayakta Enseye Halter Pres",
+                "teknik" : "Eğer bir squat rack var ise,bu egzersiz en iyi orada çalışır.Bu şekilde ağırlığı alıp kaldırmak daha kolay olacaktır.Başlangıç için,çalışacağınız ağırlığı ayarlayıp boyunuza uygun bir seviyede squat rack'e yerleştirin.Ağırlığın altına girerek,barı ensenize oturtun.İki elinizle ağırlığı iyi bir şekilde kavrayıp bacaklarınızdan da destek alarak ağırlığı bench'den çıkarın.Bacaklar omuz genişliğinde açık olacak şekilde bir adım geriye giderek pozisyon alın.Bu egzersizi çalışırken sırtınız sürekli dik olmalı.",
+                "foto" : [
+                    "assets/img/ayaktaenseye1.png",
+                    "assets/img/ayaktaenseye2.png"
+                ]
+
+            },
+            {
+                "hareket_adi" : "Halter Omuz Presi",
+                "teknik" : "Sırt desteği olan bir bench' oturun.Ağırlığı omuz genişliğinden daha geniş bir tutuşla avuç içleri ileri bakacak şekildle göğsünüzde tutun.Daha sonra ağıırlığı başınızın üstüne getirin ve dirseklerinizi kilitleyin.Hiza olarak ağırlık,başınızın biraz önünde olmalı.Bu başlangıç pozisyonunuz olacak.Nefesinizi alarak yavaşça ağırlığı göğüs hizanıza indirin.Ağırlığı nefesinizi vererek başlangıç pozisyonuna gelene kadar kaldırın",
+                "foto" : [
+                    "assets/img/halteromuz1.png",
+                    "assets/img/halteromuz2.png"
+                ]
+
+            }
+
+        ]
+    },
+    {
+        "vucut_bolge" : "Sırt",
+        "vucut_foto" : "assets/img/sırt.png",
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Eğilerek Halter Çekme",
+                "teknik" : "halter çekme",
+                "foto" : [
+                    "assets/img/egilerekhalter1.png",
+                    "assets/img/egilerekhalter2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Sırt Germe",
+                "teknik" : "sırt germe"  ,
+                "foto" : [
+                    "assets/img/sırtgerme1.png",
+                    "assets/img/sırtgerme2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Egzersiz Topu ile Hyperextension",
+                "teknik" : "egzersiz topu"  ,
+                "foto" : [
+                    "assets/img/egzersiztopu1.png",
+                    "assets/img/egzersiztopu2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Yüksek kablo çekme",
+                "teknik" : "Yere değil de yükseğe oturmanızı sağlayacak bir şey bulun.Bu bench,steps ya da kalf platformu olabilir.Bunu kablo istasyonunun karşısına koyun.Ayaklarınızı vücuunuza sabitlemek için istasyona ya da mevcut platforma dayayın ve dizlerinizi hafifçe kırın.Sırtınız düz bir şekilde iken eğilin ve V Bar'ı tutun.Doğru başlangıç pozisyonunda sırtınız dik,kollarınız gergin ve vücudunuz alt bacaklarınıza dik bir şekilde olmalı.Üst vücut sabit olacak şekilde,bar'ı karnınıza değene kadar kendinize çekin.Hareket esnasında nefesinizi verin.Son aşamada sırt kaslarınızı iyice kasın.Bi süre bekleyin.Yavaşça başlangıç pozisyonuna dönerken nefes alın."  ,
+                "foto" : [
+                    "assets/img/yuksekkablo1.png",
+                    "assets/img/yuksekkablo2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Kedi esnemesi",
+                "teknik" : "Dizlerinizin üstünde şınav pozisyonu alın.Karnınızı içinize çekerek kedilerin yaptığı gibi,sırt kısmınızı omurganızı dışarı oval bir şekilde çıkarın ve başınızı eğin.15 saniye kadar tutup tekrardan ilk pozisyonunuza dönün."  ,
+                "foto" : [
+                    "assets/img/kediesnemesi1.png",
+                    "assets/img/kediesnemesi2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Ters Çapraz Hamle",
+                "teknik" : "Ayaklarınız omuz açıklığında dik bir şekilde durun.Bu başlangıç pozisyonunuz olacak.Bir ayağınızla geriye doğru bir adım atın,bu hareketle kalçanızı ve ön dizinizi esnetin.Aynı zamanda vücudunuzu da ön tarafta kalan ayak yönünde döndürün.Bir saniye kadar durun ve başlangıç pozisyonuna dönün.Daha sonrada aynı hareketi diğer ayağınızla tekrarlayın."  ,
+                "foto" : [
+                    "assets/img/terscapraz1.png",
+                    "assets/img/terscapraz2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Geniş tutuş ile enseye barfiks",
+                "teknik" : "Geniş tutuş ile barfiks istasyonunda pozisyon alın ve avuç içleriniz ileri bakacak şekilde istasyonun barını tutun.İki elinizle tutarken kollarınızın gergin olduğundan emin olun ve vücudunuzu dik bir pozisyonda tutmaya özen gösterin.Bu başlama pozisyonunuz olacak.Kendinizi yukarı kaldırmak için kollarınız yardımıyla kendinizi yukarı çekin ve enseniz bar'a değene kadar çekmeye devam edin.Bu adımda nefesinizi verin.Vücudunuzda hareket eden tek yerin kollarınız olmalı.Üst vücudunuz sabit ve ön kollar sadece bar'ı tutmak için kullanılmalı,güç uygulanmamalı."  ,
+                "foto" : [
+                    "assets/img/genistutus1.png",
+                    "assets/img/genistutus2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Barfiks",
+                "teknik" : "Odaklanmak istediğiniz bölgeye göre tutuş genişliğini seçin ve avuç içleriniz ileri bakacak şekilde istasyonun bar'ını tutun.İki elinizle tutarken kollarınızın gergin olduğundan emin olun ve vücudunuzu yaklaşık 30 derece kadar göğsünüzden geri yatırın ve göğsünüzü dışarı çıkarın.Bu başlama pozisyonunuz olacak.Göğsünüzü yukarı kaldırarak kollarınız yardımıyla kendinizi yukarı çekin ve göğsünüz bar'a değene kadar çekmeye devam edin.Bu adımda nefesinizi verin.Hareketi tamamladıktan sonra yavaşça başlangıç pozisyonuna dönerken nefes alın ve son adımda kollarınızın iyice gerildiğini ve sırt kaslarınızın esnediğini hissedin."  ,
+                "foto" : [
+                    "assets/img/barfiks1.png",
+                    "assets/img/barfiks2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Leğen kaldırmayla köprü",
+                "teknik" : "Ayaklarınız yere basacak şekilde sırtüstü yere uzanın.Topuklarınızın diz hizasından olmasına dikkat edin.Sadece kuyruk sokumunun olduğu yeri yukarı doğru kaldırarak alt sırt/bel bölgesini esnetin.Ve karnınızı içeri çekin.Köprü pozisyonunu tamamlamak için boynunuza kadar tüm omurganızı kaldırın."  ,
+                "foto" : [
+                    "assets/img/legenkaldirma1.png",
+                    "assets/img/legenkaldirma2.png"
+                ]     
+
+            },
+            {
+                "hareket_adi" : "Çocuk Pozu",
+                "teknik" : "Diz üstünde şınav pozisyonu alın.Topuklarınıza oturacak şekilde kalçanızı aşağı indirin.Ellerinizi ilk pozisyonunda sabit tutarak,tüm omurganızı esnetecek şekilde sırtınızı gerin.Tam olarak topuklarınıza oturduğunuz zaman,ellerinizi bacaklarınızın yanına getirin ve rahatlayın.Alnınız yere değecek şekilde başınızı yere koyun.Eğer dizlerinizde sorun var ise bu egzersiz pek önerilmez!"  ,
+                "foto" : [
+                    "assets/img/cocuk1.png",
+                    "assets/img/cocuk2.png"
+                ]     
+
+            }
+        ]
+    },
+    {
+        "vucut_bolge" : "Göğüs",
+        "vucut_foto" : "assets/img/gogus.png",
+
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Cable Crossover",
+                "teknik" : "Cable Cross makinesin’de makara guruplarını göğüs hizanızla aynı seviyeye çekin. Çok ağır olmayan bir ağırlık seçip tutamaçları sırasıyla tutun ve makineyi ortalayın. Ortaladıktan sonra kollarınız açık pozisyondayken bir adım kadar öne çıkın.Dengenizi sağlamak için bir ayağınızı geriye atabilirsiniz. Vücudunuzun üst kısmı mutlaka düz bir vaziyette olmalı.Nefes vererek açık pozisyonda ve yere paralel olan kollarınızı (bknz: ilk resim sol), kırmadan öne doğru kapatmaya başlayın. Hızınız orta bir hız olsun. Maksimum seviyede göğüs kaslarınıza odaklanın.Kol ve omuz kaslarınızdan yardım almamaya çalışın.Elleriniz birbirine değip son noktaya geldiğinizde (bknz: ilk resim sağ) harekete devam edip eller birbirini geçer ve çapraz pozisyona getirirseniz Pectoralis major inner yani göğüs kaslarının iç kısmı daha çok çalışır ve göğüs kaslarınız arasında ki boşluğu doldurmak için fırsat yaratmış olursunuz Nefes alarak sıkıştırma hızınıza göre daha düşük bir hızda kollarınızı kırmadan her iki yana açın.",
+                "foto" : [
+                    "assets/img/cablocrossover1.png",
+                    "assets/img/cablocrossover2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Önden Arkaya PullOver",
+               
+                "teknik" : "Bir bench' sırtüstü uzanın,pronated tutuş ile ağırlığı elleriniz ortalama 35-40 santim genişliğinde olacak şekilde kavrayın.Kollarınız gergin ve bilekleriniz hafif eğik olacak bir şekilde halter'i üst bacaklarınızda tutun.Bu başlangıç pozisyonunuz olacak.Şimdi nefes alarak dirsekleri de kırmadna yarı-dairesek bir hareketle başınızın üstüne getirin.Halter başınızın diğer tarafına gelene kadar harekete devam edin.Son noktada kollarınız yere paralel ve avuç içleriniz tavana bakıyor olmalı.Şimdi nefesinizi vererek başlangıç pozisyonuna dönün."  ,
+                "foto" : [
+                    "assets/img/ondenarkaya1.png",
+                    "assets/img/ondenarkaya2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Yukarı Eğimli Dambıl Göğüs Pres",
+                "teknik" : "Her iki elinizdeki ağırlıkları da üst bacaklarınızın üstünde tutar şekilde,yukarı eğimli bir bench'e sırtüstü uzanın.Daha sonra üst bacaklarınızdan yardım alarak,her iki ağırlığı da tek tek yukarı omuzlarınızın yanlarına doğru kaldırın.Duruşunuz ilk resimdeki gibi olmalıdır.Omuz hizanızda ağırlıkları tuttuğunuzda avuç içleriniz ayaklarınıza bakıyor olmalı ve kollarınız yere dik bir şekilde hizalanmış olmalı.Bu egzersizin her anında ağırlıkların kontrolünün sizde olmasına özen gösterin.Bu başlama pozisyonunuz olacak.Sonra,nefesinizi vererek ağırlıkları göğsünüzden yukarı doğru itin.En üst pozisyonda dirseklerinizi kilitleyip,göğsünüzü iyice kasın ve bir saniye kadar bekleyin.Daha sonra nefes alarak başlangıç pozisyonuna dönün." ,
+                "foto" : [
+                    "assets/img/yukarıegimli1.png",
+                    "assets/img/yukarıegimli2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Dips",
+                "teknik" : "Bu egzersiz için paralel bar'lara ihtiyacınız olacak.Başlangıç pozisyonu almak için vücudunuzu kollarınızı kilitleyecek şekilde barları tutarak yukarıda sabitleyiniz.Bir yandan nefes alırken kendinizi yavaşça,vücudunuz öne doğru yaklaşık 30 derece eğilecek şekilde aşağı indirin.Bileklerle de doğru açıyı verdiğiniz zaman en aşağıda göğsünüzde gerilmeyi hissedeceksiniz.Gerilmeyi hissettiğiniz noktada biraz bekleyin,nefesinizi vererek başlama pozisyonunuza dönün." ,
+                "foto" : [
+                    "assets/img/dips1.png",
+                    "assets/img/dips2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Şınav",
+                "teknik" : "Kollarınız yaklaşık 1 metre kadar açık olacak ve vücudunuzu yerden kaldıracak dik bir şekilde yere yüz üstü pozisyon alın.Sonrasında,göğüsünüz neredeyse yere değene kadar kendinizi aşağı indirin ve bu esnada nefesinizi verin.Başlangıç pozisyonuna dönerken,nefesinizi verin ve son noktada göğsünüzü iyice kasın.Kısa bir süre bu pozisyonda durduktan sonra hareketi tekrarlayın." ,
+                "foto" : [
+                    "assets/img/sinav1.png",
+                    "assets/img/sinav2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Dambıl Açma",
+                "teknik" : "Dambıl'ları bacaklarınızın üstüne koyarak,düz bir bench'e sırtüstü uzanın.Her seferinde tek dambıl'ı bacağınız yardımıyla kaldırarak,ağırlıkları avuç içleriniz birbirine bakacak şekilde omuz hizanıza kaldırın.Dambıllar omuz hizanızda yukarıda olsun ama dirseklerinizi kilitlemeyin.Bu başlangıç pozisyonunuz olacak.Ağırlıklaro,bicepslerde stresi azaltmak için bileklerden hafifçe içeri doğru bükük şekilde tutmaya özen gösterin ve yavaşça,göğsünüzde gerilme hissedene kadar yanlara doğru açın.Hareketin bu kısmını yaparken nefes alın.Kollarınızı başlangıç pozisyonuna getirirken göğsünüzü iyice sıkın ve nefes verin.Kastığınız pozisyonda bir süre ağırlıkları tutun." ,
+                "foto" : [
+                    "assets/img/dambılacma1.png",
+                    "assets/img/dambılacma2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Kabloyla Göğüs Açma",
+                "teknik" : "Alçak seviyede iki yanda ayarladığınız kablo istasyonun ortasına düz bir bench yerleştirin.Doğru hiza için göğsünüz kablolar hizasında olmalıdır.Bench'e sırtüstü uzanın ve ayaklarınızın yere sağlam bir şekilde bastığından emin olun.Kablo istasyonunun kollarını avuç içeriniz yukarı bakacak şekilde kavrayın.Gerekirse çalışma arkadaşınızdan kolları almanıza yardımcı olmasını isteyin.Bileklerden hafifçe eğim vererek kollarınızı gerin.Kollarınızın yere paralel durumu sizin başlangıç pozisyonunuz olacak.Şimdi ağırlıkları yarı dairesel bir hareketle kendinize doğru iki elinizle tam göz hizanızda birleştirmeye çalışın.Elleriniz göz hizasına geldiğinizde göğsünüzü iyice kasmayı unutmayın." ,
+                "foto" : [
+                    "assets/img/kablogogus1.png",
+                    "assets/img/kablogogus2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Kelebek",
+                "teknik" : "Sırtınızı düzgün bir şekilde yaslayarak Kelebek İstasyonuna oturun.Ellerinize kolları tutun.Bu başlangıç pozisyonunuz olacak.Kolları iki taraftan iterek,göğsünüzün ortasında birleşecek şekilde birbirine yaklaştırın.Bu esnada nefesinizi verin ve iki eliniz birleştiğinde göğsünüzü kasın.Yavaşça nefes alarak başlangıç pozisyonuna dönün ve en son aşamada göğüs kafesinizin gerildiğini hissedin." ,
+                "foto" : [
+                    "assets/img/kelebek1.png",
+                    "assets/img/kelebek2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Dambıl Göğüs Pres",
+                "teknik" : "Her iki elinizdeki ağırlıkları da üst bacaklarınızın üstünde tutar şekilde,düz bir bench'e sırtüstü uzanın.Daha sonra üst bacaklarınızdan yardım alarak,her iki ağırlığı da tek tek yukarı omuzlarınızın yanlarına doğru kaldırın.Duruşunuz ilk resimdeki gibi olmalıdır.Omuz hizanızda ağırlıkları tuttuğunuzda avuç içleriniz ayaklarınıza bakıyor olmalı ve kollarınız yere dik bir şekilde hizalanmış olmalı.Bu egzersizin her anında ağırlıkların kontrolünün sizde olmasına özen gösterin.Bu başlama pozisyonunuz olacak.Sonra,nefesinizi vererek ağırlıkları göğsünüzden yukarı doğru itin.En üst pozisyonda dirseklerinizi kilitleyip,göğsünüzü iyice kasın ve bir saniye kadar bekleyin.Daha sonra nefes alarak başlangıç pozisyonuna dönün." ,
+                "foto" : [
+                    "assets/img/dambılgogus1.png",
+                    "assets/img/dambılgogus2.png"
+                ]       
+
+            }
+        ]
+    },
+    {
+        "vucut_bolge" : "Pazı",
+        "vucut_foto" : "assets/img/pazı.png",
+
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Preacher Hammer Dambıl Curl",
+                "teknik" : "İki elinize çalışacağınız ağırlıktaki dambılları alıp,doğal tutuş ile kavrayın.Üst kollarınızı preacher bench'e yerleştirin.Nefes alarak,yavaşça ağırlıkları aşağı doğru indirin ve kollarınızı iyice bench'e uzatın.Nefesinizi vererek,biceps'lerinizi kullanmak suretiyle ağırlıkları yukarı,omuz hizanıza gelene kadar kaldırın.En yüksek seviyede bir saniye kadar bekleyerek biceps'lerinizi iyice kasın ve sonrasında tavsiye edilen tekrar sayısı kadar uygulamaya devam edin."  ,
+                "foto" : [
+                    "assets/img/preacherhammer1.png",
+                    "assets/img/preacherhammer2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Preacher Curl",
+               
+                "teknik" : "Bu egzersizi gerçekleştirmek için bir preacher bench'e,bir de E-Z Bar'a ihtiyacınız olacak.E-Z Bar'ı yakın tutuşla iç taraftaki eğimli yerden kavrayın.Avuç içleriniz ileri ve hafif içe doğru bakıyor olmalı,bu da E-Z Bar'ın eğimli şeklinden kaynaklanıyor.Üst kollarınız Preacher Bench'de iyice uzanmışken ve göğsünüz de dayalı iken bar kollarınızı gerecek şekilde aşağı sarkıyor olmalı.Bu başlangıç pozisyonunuz olacak.Nefesinizi vererek ağırlığı omuz hizanıza gelene kadar biceps yardımıyla kaldırın ve en üst seviyede bir saniye kadar tutun.Daha sonrasında nefeisnizi alarak başlangıç pozisyonuna dönerek kolunuzu bench'e yatırın."  ,
+                "foto" : [
+                    "assets/img/preacher1.png",
+                    "assets/img/preacher2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Zottman Preacher Curl",
+                "teknik" : "İki elinize de egzersize uygun ağırlıkları alın ve üst kollarınızı preacher bench'e ya da yukarı eğimli bir bench'e yerleştirin.Ağırlıklar omuz hizanızda ve bileklerinizi esnek olmalı.Dambıl'ları tutuşunuzda avuç içleriniz aşağı bakıyor olmalı.Bu başlangıç pozisyonunuz olacak.Nefes alarak,yavaşça ağırlığı aşağı doğru indirin ve kollarınızı gerdirin.Şimdi tutuş şeklinizi avuç içleriniz yukarı bakacak şekilde döndürün.Nefesinizi vererek,ağırlığı bicepslerinizden destek alarak ağırlık omuz hizasına gelene kadar kaldırın.En yüksek gerilimi sağlayabilmek için serçe parmağınızın,baş parmağınızdan daha yüksek bir seviyede olmasına dikkat edin." ,
+                "foto" : [
+                    "assets/img/zottman1.png",
+                    "assets/img/zottman2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Tek Kol Dambıl Preacher Curl",
+                "teknik" : "Dambıl'ı sağ elinize alın ve bir preacher bench'e ya da yukarı eğimli ayarlanmış normal bir bench'e yerleştirin.Ağırlık omuzunuz hizasında bench'e iyice yerleşmiş bir şekilde tutulmalıdır.Bu başlangıç pozisyonunuz olacak.Nefes alarak,yavaşça ağırlığı aşağı doğru indirip kolunuzu bench'e iyice uzatın ve bu şekilde biceps iyice gerilmiş olacak.Nefesinizi vererek ve sadece biceps'den destek alarak kolunuzu omuz hizanıza geri gelecek şekilde kaldırın.En son aşamada iyi bir gerilme için bir saniye kadar beklemeyi ve serçe parmağınızın bu aşamada baş parmağınızdan daha yüksekte olması gerektiğini unutmayın." ,
+                "foto" : [
+                    "assets/img/tekkoldambıl1.png",
+                    "assets/img/tekkoldambıl2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Dambıl Biceps Curl",
+                "teknik" : "İki elinize aldığınız dambılları aşağı serbest bir şekilde sarkıtırken dik bir şekilde ayakta durun.Dirsekleriniz vücudunuza yakın ve avuç içleriniz ileri bakıyor olmalı.Bu başlangıç pozisyonunuz olacak.Şimdi,üst kolları sabit tutarak biceps'inizden ağırlıkları kaldırın ve nefesinizi vermeye başlayın.Ağırlıkları,bicepsleriniz iyice kasılana ve dambıllar omuz hizasına gelene kadar kaldırın.En üst pozisyona kadar kaldırdığınızda kısa bir süre bekleyip bicepslerinizi iyice kasın.Sonrasında nefes alarak,yavaşça başlangıç pozisyonuna geri dönün." ,
+                "foto" : [
+                    "assets/img/dambılcurl1.png",
+                    "assets/img/dambılcurl2.png"
+                ]       
+
+            },
+            {
+                "hareket_adi" : "Halter Curl",
+                "teknik" : "Halteri istediğiniz ağırlığa ayarladıktan sonra,ayakta halteri alın.Omuz genişliğinde tuttuğunuz ağırlığı tutuş şeklinizde avuç içleri ileri bakacak şekilde ve dirsekleriniz vücudunuza mümkün olduğunca yakın olmalı.Bu başlangıç pozisyonunuz olacak.Üst kollarınız sabitken,ağırlığı omuzlarınıza doğru kaldırın ve nefesinizi verin.Bicepsleriniz iyice gerilip,ağırlık omuz seviyesine gelene kadar devam edin.Son adımda bir saniye kadar bekleyip biceps'inizi iyice kasın.Nefes alırken,yavaşça ağırlığı başlangıç pozisyonuna getirin." ,
+                "foto" : [
+                    "assets/img/haltercurl1.png",
+                    "assets/img/haltercurl2.png"
+                ]       
+
+            }
+        ]
+    },
+    {
+        "vucut_bolge" : "Ön Kol",
+        "vucut_foto" : "assets/img/onkol.png",
+
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Cable Crossover",
+                "teknik" : "cable crossover"  ,
+                "foto" : [
+                    "assets/img/cablocrossover1.png",
+                    "assets/img/cablocrossover2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Önden Arkaya PullOver",
+               
+                "teknik" : "önden arkaya pullover"  ,
+                "foto" : [
+                    "assets/img/ondenarkaya1.png",
+                    "assets/img/ondenarkaya2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Yukarı Eğimli Dambıl Göğüs Pres",
+                "teknik" : "dambıl göğüs pres" ,
+                "foto" : [
+                    "assets/img/yukarıegimli1.png",
+                    "assets/img/yukarıegimli2.png"
+                ]       
+
+            }
+        ]
+    },
+    {
+        "vucut_bolge" : "Karın",
+        "vucut_foto" : "assets/img/karın.png",
+
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Cable Crossover",
+                "teknik" : "cable crossover"  ,
+                "foto" : [
+                    "assets/img/cablocrossover1.png",
+                    "assets/img/cablocrossover2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Önden Arkaya PullOver",
+               
+                "teknik" : "önden arkaya pullover"  ,
+                "foto" : [
+                    "assets/img/ondenarkaya1.png",
+                    "assets/img/ondenarkaya2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Yukarı Eğimli Dambıl Göğüs Pres",
+                "teknik" : "dambıl göğüs pres" ,
+                "foto" : [
+                    "assets/img/yukarıegimli1.png",
+                    "assets/img/yukarıegimli2.png"
+                ]       
+
+            }
+        ]
+    },
+    {
+        "vucut_bolge" : "Kalça",
+        "vucut_foto" : "assets/img/kalca.png",
+
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Cable Crossover",
+                "teknik" : "cable crossover"  ,
+                "foto" : [
+                    "assets/img/cablocrossover1.png",
+                    "assets/img/cablocrossover2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Önden Arkaya PullOver",
+               
+                "teknik" : "önden arkaya pullover"  ,
+                "foto" : [
+                    "assets/img/ondenarkaya1.png",
+                    "assets/img/ondenarkaya2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Yukarı Eğimli Dambıl Göğüs Pres",
+                "teknik" : "dambıl göğüs pres" ,
+                "foto" : [
+                    "assets/img/yukarıegimli1.png",
+                    "assets/img/yukarıegimli2.png"
+                ]       
+
+            }
+        ]
+    },
+    {
+        "vucut_bolge" : "Baldır",
+        "vucut_foto" : "assets/img/baldır.png",
+
+        "vucut_detay" : [
+            {
+                "hareket_adi" : "Cable Crossover",
+                "teknik" : "cable crossover"  ,
+                "foto" : [
+                    "assets/img/cablocrossover1.png",
+                    "assets/img/cablocrossover2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Önden Arkaya PullOver",
+               
+                "teknik" : "önden arkaya pullover"  ,
+                "foto" : [
+                    "assets/img/ondenarkaya1.png",
+                    "assets/img/ondenarkaya2.png"
+                ]      
+
+            },
+            {
+                "hareket_adi" : "Yukarı Eğimli Dambıl Göğüs Pres",
+                "teknik" : "dambıl göğüs pres" ,
+                "foto" : [
+                    "assets/img/yukarıegimli1.png",
+                    "assets/img/yukarıegimli2.png"
+                ]       
+
+            }
+        ]
+    }
+]
