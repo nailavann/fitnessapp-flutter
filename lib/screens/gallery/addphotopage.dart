@@ -60,7 +60,7 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: const Text("Fotoğraf yükle!"),
+        title: const Text("Fotoğraf yükle"),
       ),
       extendBodyBehindAppBar: true,
       body: Stack(
