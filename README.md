@@ -1,6 +1,6 @@
 # fitnessapp_flutter
 
-![Screenshot_1640297740](https://user-images.githubusercontent.com/74551108/147949578-2e4b6bf7-c685-4e1c-89f3-c53ad2ab6e7f.png)
+![alt text][Screenshot_1640297740](https://user-images.githubusercontent.com/74551108/147949578-2e4b6bf7-c685-4e1c-89f3-c53ad2ab6e7f.png)
 
 ![Screenshot_1640297744](https://user-images.githubusercontent.com/74551108/147949588-52ecfa34-0804-4d57-9984-056c298fa7bf.png)
 
