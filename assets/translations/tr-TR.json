@@ -1,0 +1,24 @@
+{
+    "hello" : "Merhaba",
+    "exercises" : "Egzersizler",
+    "gallery" : "Galeri",
+    "members" : "Üyeler",
+    "settings" : "Ayarlar",
+    "logout" : "Çıkış Yap",
+    "add" : "Ekle",
+    "add_photo" : "Fotoğraf Ekle",
+    "yes" : "Evet",
+    "no" : "Hayır",
+    "are_you_sure" : "Emin misin?",
+    "login" : "Giriş",
+    "register" : "Kayıt",
+    "username" : "Kullanıcı adı",
+    "email" : "Email",
+    "password" : "Şifre",
+    "want_login" : "Giriş yapmak ister misiniz?",
+    "not_registered" : "Henüz kayıt olmadınız mı?"
+
+
+
+
+}

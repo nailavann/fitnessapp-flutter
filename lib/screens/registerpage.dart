@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:fitnessapp_flutter/screens/startpage.dart';
 import 'package:flutter/material.dart';
 
@@ -79,16 +80,16 @@ class _RegisterPageState extends State<RegisterPage> {
                         }
                       },
                       controller: _usernameController,
-                      decoration: const InputDecoration(
-                          prefixIcon: Icon(
+                      decoration: InputDecoration(
+                          prefixIcon: const Icon(
                             Icons.person,
                             color: Colors.black,
                           ),
-                          enabledBorder: OutlineInputBorder(),
-                          focusedBorder: OutlineInputBorder(),
-                          errorBorder: OutlineInputBorder(),
-                          labelText: "Kullanıcı adı",
-                          labelStyle: TextStyle(color: Colors.black)),
+                          enabledBorder: const OutlineInputBorder(),
+                          focusedBorder: const OutlineInputBorder(),
+                          errorBorder: const OutlineInputBorder(),
+                          labelText: "username".tr(),
+                          labelStyle: const TextStyle(color: Colors.black)),
                     ),
                   ),
                   Padding(
@@ -103,16 +104,16 @@ class _RegisterPageState extends State<RegisterPage> {
                         }
                       },
                       controller: _emailController,
-                      decoration: const InputDecoration(
-                          prefixIcon: Icon(
+                      decoration: InputDecoration(
+                          prefixIcon: const Icon(
                             Icons.email,
                             color: Colors.black,
                           ),
-                          enabledBorder: OutlineInputBorder(),
-                          focusedBorder: OutlineInputBorder(),
-                          errorBorder: OutlineInputBorder(),
-                          labelText: "Email",
-                          labelStyle: TextStyle(color: Colors.black)),
+                          enabledBorder: const OutlineInputBorder(),
+                          focusedBorder: const OutlineInputBorder(),
+                          errorBorder: const OutlineInputBorder(),
+                          labelText: "email".tr(),
+                          labelStyle: const TextStyle(color: Colors.black)),
                     ),
                   ),
                   Padding(
@@ -129,16 +130,16 @@ class _RegisterPageState extends State<RegisterPage> {
                       },
                       obscureText: true,
                       controller: _passwordController,
-                      decoration: const InputDecoration(
-                          prefixIcon: Icon(
+                      decoration: InputDecoration(
+                          prefixIcon: const Icon(
                             Icons.password,
                             color: Colors.black,
                           ),
-                          enabledBorder: OutlineInputBorder(),
-                          focusedBorder: OutlineInputBorder(),
-                          errorBorder: OutlineInputBorder(),
-                          labelText: "Şifre",
-                          labelStyle: TextStyle(color: Colors.black)),
+                          enabledBorder: const OutlineInputBorder(),
+                          focusedBorder: const OutlineInputBorder(),
+                          errorBorder: const OutlineInputBorder(),
+                          labelText: "password".tr(),
+                          labelStyle: const TextStyle(color: Colors.black)),
                     ),
                   ),
                   const SizedBox(
@@ -162,7 +163,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                       (route) => false));
                         }
                       },
-                      child: const Text("Kayıt ol")),
+                      child: const Text("register").tr()),
                   const SizedBox(
                     height: 40,
                   ),
@@ -175,12 +176,12 @@ class _RegisterPageState extends State<RegisterPage> {
                           ));
                     },
                     child: const Text(
-                      "Giriş yapmak ister misiniz?",
+                      "want_login",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
-                    ),
+                    ).tr(),
                   )
                 ],
               ),

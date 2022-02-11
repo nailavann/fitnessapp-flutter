@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:fitnessapp_flutter/screens/registerpage.dart';
 import 'package:fitnessapp_flutter/screens/startpage.dart';
 import 'package:flutter/material.dart';
@@ -82,16 +83,16 @@ class _LoginPageState extends State<LoginPage> {
                         }
                       },
                       controller: _emailController,
-                      decoration: const InputDecoration(
-                          enabledBorder: OutlineInputBorder(),
-                          focusedBorder: OutlineInputBorder(),
-                          errorBorder: OutlineInputBorder(),
-                          prefixIcon: Icon(
+                      decoration: InputDecoration(
+                          enabledBorder: const OutlineInputBorder(),
+                          focusedBorder: const OutlineInputBorder(),
+                          errorBorder: const OutlineInputBorder(),
+                          prefixIcon: const Icon(
                             Icons.email,
                             color: Colors.black,
                           ),
-                          labelText: "Email",
-                          labelStyle: TextStyle(color: Colors.black)),
+                          labelText: "email".tr(),
+                          labelStyle: const TextStyle(color: Colors.black)),
                     ),
                   ),
                   Padding(
@@ -108,16 +109,16 @@ class _LoginPageState extends State<LoginPage> {
                       },
                       obscureText: true,
                       controller: _passwordController,
-                      decoration: const InputDecoration(
-                          enabledBorder: OutlineInputBorder(),
-                          focusedBorder: OutlineInputBorder(),
-                          errorBorder: OutlineInputBorder(),
-                          prefixIcon: Icon(
+                      decoration: InputDecoration(
+                          enabledBorder: const OutlineInputBorder(),
+                          focusedBorder: const OutlineInputBorder(),
+                          errorBorder: const OutlineInputBorder(),
+                          prefixIcon: const Icon(
                             Icons.security,
                             color: Colors.black,
                           ),
-                          labelText: "Şifre",
-                          labelStyle: TextStyle(color: Colors.black)),
+                          labelText: "password".tr(),
+                          labelStyle: const TextStyle(color: Colors.black)),
                     ),
                   ),
                   const SizedBox(
@@ -138,16 +139,16 @@ class _LoginPageState extends State<LoginPage> {
                                     (route) => false));
                       }
                     },
-                    child: const Text("Giriş Yap"),
+                    child: const Text("login").tr(),
                     style: ElevatedButton.styleFrom(primary: Colors.black),
                   ),
                   const SizedBox(
                     height: 40,
                   ),
                   GestureDetector(
-                      child: const Text(
-                        "Henüz kayıt olmadınız mı?",
-                        style: TextStyle(
+                      child: Text(
+                        "not_registered".tr(),
+                        style: const TextStyle(
                             color: Colors.black,
                             fontSize: 15,
                             fontWeight: FontWeight.bold),

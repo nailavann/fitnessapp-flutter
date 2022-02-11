@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/exercise/exercise.dart';
@@ -13,7 +14,7 @@ class GridList extends StatefulWidget {
 }
 
 class _GridListState extends State<GridList> {
-  final List listPage = ["Egzersizler", "Üyeler", "Galeri", "Ayarlar"];
+  final List listPage = ["exercises", "members", "gallery", "settings"];
   final List routingPage = [
     const Exercise(),
     const PersonsPage(),
@@ -55,7 +56,7 @@ class _GridListState extends State<GridList> {
                     color: Colors.white,
                     fontSize: 16.0,
                   ),
-                ),
+                ).tr(),
               ),
             ));
       },

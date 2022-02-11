@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -57,12 +58,12 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    "Merhaba",
+                    "hello",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 42,
                         fontWeight: FontWeight.bold),
-                  ),
+                  ).tr(),
                   const SizedBox(
                     height: 10,
                   ),

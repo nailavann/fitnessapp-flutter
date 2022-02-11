@@ -1,0 +1,20 @@
+{
+    "hello" : "Hello",
+    "exercises" : "Exercises",
+    "gallery" : "Gallery",
+    "members" : "Members",
+    "settings" : "Settings",
+    "logout" : "Log Out",
+    "add" : "Add",
+    "add_photo" : "Add Photo",
+    "yes" : "Yes",
+    "no" : "No",
+    "are_you_sure" : "Are you sure?",
+    "login" : "Login",
+    "register" : "Register",
+    "username" : "Username",
+    "email" : "Email",
+    "password" : "Password",
+    "want_login" : "Do you want to login?",
+     "not_registered" : "Not registered yet?"
+}

@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class _GalleryPageState extends State<GalleryPage> {
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: const Text("Galeri"),
+        title: const Text("gallery").tr(),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,

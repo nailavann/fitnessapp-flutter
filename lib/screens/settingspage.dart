@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../services/auth.dart';
@@ -17,18 +18,18 @@ class _SettingsPageState extends State<SettingsPage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          content: const Text("Emin misiniz?"),
+          content: const Text("are_you_sure").tr(),
           actions: [
             TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: const Text("Hayır")),
+                child: const Text("no").tr()),
             TextButton(
                 onPressed: () {
                   AuthService.signOut(context);
                 },
-                child: const Text("Evet"))
+                child: const Text("yes").tr())
           ],
         );
       },
@@ -62,7 +63,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   onPressed: () {
                     dialog();
                   },
-                  child: const Text("Çıkış Yap!")),
+                  child: const Text("logout").tr()),
             )
           ],
         ),

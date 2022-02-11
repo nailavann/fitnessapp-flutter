@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -60,7 +61,7 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: const Text("Fotoğraf yükle"),
+        title: const Text("add_photo").tr(),
       ),
       extendBodyBehindAppBar: true,
       body: Stack(
@@ -127,10 +128,10 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
                     Navigator.pop(context);
                   },
                   child: Container(
-                    child: const Padding(
-                      padding: EdgeInsets.only(
+                    child: Padding(
+                      padding: const EdgeInsets.only(
                           left: 26.0, top: 10, bottom: 10, right: 26),
-                      child: Text("Ekle"),
+                      child: const Text("add").tr(),
                     ),
                     decoration: BoxDecoration(
                         color: Colors.white,

@@ -41,6 +41,7 @@ dependencies:
   firebase_storage: ^10.2.4
   image_picker: ^0.8.4+4
   fluttertoast: ^8.0.8
+  easy_localization: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,7 @@ flutter:
   assets:
     - assets/data/veriler.json
     - assets/img/
+    - assets/translations/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
