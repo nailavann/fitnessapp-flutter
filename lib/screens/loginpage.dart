@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fitnessapp_flutter/screens/registerpage.dart';
 import 'package:fitnessapp_flutter/screens/startpage.dart';
@@ -7,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../services/auth.dart';
 import 'homepage.dart';
+import 'package:sn_progress_dialog/sn_progress_dialog.dart';
 
 late TextEditingController _emailController;
 late TextEditingController _passwordController;
@@ -39,6 +38,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    ProgressDialog pr = ProgressDialog(context: context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -127,6 +128,7 @@ class _LoginPageState extends State<LoginPage> {
                   ElevatedButton(
                     onPressed: () {
                       if (_key.currentState!.validate()) {
+                        pr.show(max: 1000, msg: "pr_login".tr());
                         AuthService.signIn(
                                 _emailController.text, _passwordController.text)
                             .then((value) => value == null
@@ -136,7 +138,8 @@ class _LoginPageState extends State<LoginPage> {
                                     MaterialPageRoute(
                                       builder: (context) => const HomePage(),
                                     ),
-                                    (route) => false));
+                                    (route) => false))
+                            .whenComplete(() => pr.close());
                       }
                     },
                     child: const Text("login").tr(),

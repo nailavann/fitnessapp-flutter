@@ -7,6 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:sn_progress_dialog/sn_progress_dialog.dart';
 
 import '../../services/photo_service.dart';
 
@@ -56,6 +57,8 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
 
   @override
   Widget build(BuildContext context) {
+    ProgressDialog pr = ProgressDialog(context: context);
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -121,11 +124,14 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
                   height: 20,
                 ),
                 InkWell(
-                  onTap: () {
-                    _photoService.addPhoto(_profileImage, name.toString()).then(
-                        (value) =>
+                  onTap: () async {
+                    pr.show(max: 1000, msg: "pr_photo".tr());
+                    await _photoService
+                        .addPhoto(_profileImage, name.toString())
+                        .then((value) =>
                             Fluttertoast.showToast(msg: "Fotoğraf eklendi!"));
                     Navigator.pop(context);
+                    pr.close();
                   },
                   child: Container(
                     child: Padding(

@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:fitnessapp_flutter/screens/registerpage.dart';
 import 'package:flutter/material.dart';
 
@@ -50,11 +51,11 @@ class _StartPageState extends State<StartPage> {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                ContainerGenerated("Giriş", const LoginPage()),
+                ContainerGenerated("login", const LoginPage()),
                 const SizedBox(
                   height: 15,
                 ),
-                ContainerGenerated("Kayıt", const RegisterPage()),
+                ContainerGenerated("register", const RegisterPage()),
               ],
             ))
       ],
@@ -93,7 +94,7 @@ class ContainerGenerated extends StatelessWidget {
             color: Colors.white,
             fontSize: 16.0,
           ),
-        ),
+        ).tr(),
       ),
     );
   }

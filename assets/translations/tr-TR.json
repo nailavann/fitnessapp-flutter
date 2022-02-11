@@ -16,7 +16,10 @@
     "email" : "Email",
     "password" : "Şifre",
     "want_login" : "Giriş yapmak ister misiniz?",
-    "not_registered" : "Henüz kayıt olmadınız mı?"
+    "not_registered" : "Henüz kayıt olmadınız mı?",
+    "pr_login" : "Giriş yapılıyor...",
+    "pr_register" : "Kayıt olunuyor..",
+    "pr_photo" : "Fotoğraf yükleniyor..."
 
 
 

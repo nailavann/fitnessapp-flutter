@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fitnessapp_flutter/screens/startpage.dart';
 import 'package:flutter/material.dart';
+import 'package:sn_progress_dialog/sn_progress_dialog.dart';
 
 import '../services/auth.dart';
 import 'loginpage.dart';
@@ -36,6 +37,8 @@ class _RegisterPageState extends State<RegisterPage> {
 
   @override
   Widget build(BuildContext context) {
+    ProgressDialog pr = ProgressDialog(context: context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -149,6 +152,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: ElevatedButton.styleFrom(primary: Colors.black),
                       onPressed: () {
                         if (_key.currentState!.validate()) {
+                          pr.show(max: 10000, msg: "pr_register".tr());
                           AuthService.createAccount(
                                   _emailController.text,
                                   _passwordController.text,
@@ -160,7 +164,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                       MaterialPageRoute(
                                         builder: (context) => const LoginPage(),
                                       ),
-                                      (route) => false));
+                                      (route) => false))
+                              .whenComplete(() => pr.close());
                         }
                       },
                       child: const Text("register").tr()),

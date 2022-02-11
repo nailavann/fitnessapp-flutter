@@ -12,8 +12,7 @@ Future<void> main() async {
   runApp(
     EasyLocalization(
         supportedLocales: const [Locale('tr', 'TR'), Locale('en', 'US')],
-        path:
-            'assets/translations', // <-- change the path of the translation files
+        path: 'assets/translations',
         fallbackLocale: const Locale('tr', 'TR'),
         child: const MyApp()),
   );

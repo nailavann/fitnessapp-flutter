@@ -16,5 +16,9 @@
     "email" : "Email",
     "password" : "Password",
     "want_login" : "Do you want to login?",
-     "not_registered" : "Not registered yet?"
+     "not_registered" : "Not registered yet?",
+     "pr_login" : "Logging in..",
+     "pr_register" : "Registering..",
+     "pr_photo" : "Photo uploading..."
+     
 }
