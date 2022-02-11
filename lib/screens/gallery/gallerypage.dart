@@ -49,7 +49,6 @@ class _GalleryPageState extends State<GalleryPage> {
               return !snapshot.hasData
                   ? const CircularProgressIndicator()
                   : ListView.builder(
-                      shrinkWrap: true,
                       itemCount: snapshot.data!.docs.length,
                       itemBuilder: (context, index) {
                         var photo = snapshot.data!.docs[index];

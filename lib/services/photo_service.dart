@@ -18,13 +18,17 @@ class PhotoService {
 
     photoUrl = await _storageService.uploadPhoto(File(xFile.path));
 
-    var document = await ref.add({'photo': photoUrl, 'username': username});
+    var document = await ref
+        .add({'photo': photoUrl, 'username': username, 'date': DateTime.now()});
 
     return Status(id: document.id, image: photoUrl);
   }
 
   static Stream<QuerySnapshot> viewPhoto() {
-    var ref = _firebaseFirestore.collection("Photo").snapshots();
+    var ref = _firebaseFirestore
+        .collection("Photo")
+        .orderBy("date", descending: true)
+        .snapshots();
 
     return ref;
   }
