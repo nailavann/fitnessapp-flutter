@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:fitnessapp_flutter/const/hive_const.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 import 'activity_detail.dart';
 
@@ -18,8 +20,8 @@ class ExerciseActivity extends StatefulWidget {
 }
 
 class _ExerciseActivityState extends State<ExerciseActivity> {
-  var bodyListDetail;
-  var bodyList;
+  final bodyListDetail;
+  final bodyList;
   _ExerciseActivityState(this.bodyListDetail, this.bodyList);
 
   @override
@@ -59,8 +61,8 @@ class _ExerciseActivityState extends State<ExerciseActivity> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>
-                                ActivityDetail(bodyListDetail: bodyDetail),
+                            builder: (context) => ActivityDetail(
+                                bodyListDetail: bodyDetail, index: index),
                           ));
                     },
                     child: Row(
@@ -73,7 +75,7 @@ class _ExerciseActivityState extends State<ExerciseActivity> {
                           ),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8),
-                            child: Container(
+                            child: SizedBox(
                                 height: 60,
                                 child: Image.asset(bodyDetail.foto[0])),
                           ),
@@ -81,7 +83,7 @@ class _ExerciseActivityState extends State<ExerciseActivity> {
                         const SizedBox(
                           width: 20,
                         ),
-                        Flexible(
+                        Expanded(
                           child: Text(
                             bodyDetail.hareketAdi,
                             style: const TextStyle(
@@ -89,7 +91,7 @@ class _ExerciseActivityState extends State<ExerciseActivity> {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   );

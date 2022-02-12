@@ -2,7 +2,9 @@ import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fitnessapp_flutter/const/hive_const.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import '../commons/gridview.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,6 +27,7 @@ class _HomePageState extends State<HomePage> {
         .get()
         .then((value) {
       username = value.data()!['username'];
+
       setState(() {});
     });
   }

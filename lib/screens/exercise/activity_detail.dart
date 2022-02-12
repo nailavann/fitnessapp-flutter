@@ -1,25 +1,56 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:fitnessapp_flutter/const/hive_const.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class ActivityDetail extends StatefulWidget {
   var bodyListDetail;
-  ActivityDetail({Key? key, required this.bodyListDetail}) : super(key: key);
+  int index;
+  ActivityDetail({Key? key, required this.bodyListDetail, required this.index})
+      : super(key: key);
 
   @override
-  _ActivityDetailState createState() => _ActivityDetailState(bodyListDetail);
+  _ActivityDetailState createState() =>
+      _ActivityDetailState(bodyListDetail, index);
 }
 
 class _ActivityDetailState extends State<ActivityDetail> {
   var bodyListDetail;
-  _ActivityDetailState(this.bodyListDetail);
+  int index;
+  _ActivityDetailState(this.bodyListDetail, this.index);
+  Box box = Hive.box(HiveConst.FAVORITE_BOX);
+  bool isFavorite = false;
+
   @override
   Widget build(BuildContext context) {
+    debugPrint(box.toMap().toString());
     return Scaffold(
         backgroundColor: const Color(0xffbdc3c7),
         extendBodyBehindAppBar: true,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
+          actions: [
+            ValueListenableBuilder<Box>(
+                valueListenable: box.listenable(),
+                builder: (context, value, child) {
+                  return IconButton(
+                      onPressed: () {
+                        setState(() {
+                          isFavorite = !isFavorite;
+                        });
+                        isFavorite
+                            ? box.put(
+                                bodyListDetail.hareketAdi.toString().length,
+                                bodyListDetail.hareketAdi)
+                            : box.delete(
+                                bodyListDetail.hareketAdi.toString().length);
+                      },
+                      icon: Icon(Icons.favorite,
+                          color:
+                              isFavorite != false ? Colors.white : Colors.red));
+                })
+          ],
         ),
         body: SingleChildScrollView(
           child: Column(
