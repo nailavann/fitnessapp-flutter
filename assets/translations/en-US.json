@@ -20,7 +20,8 @@
      "pr_login" : "Logging in..",
      "pr_register" : "Registering..",
      "pr_photo" : "Photo uploading...",
-     "favorite" : "Favorite"
+     "favorite" : "Favorite",
+     "feature" : "Features"
 
      
 }
