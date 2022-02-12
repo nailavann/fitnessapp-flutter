@@ -1,7 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:fitnessapp_flutter/const/hive_const.dart';
 import 'package:fitnessapp_flutter/screens/homepage.dart';
 import 'package:fitnessapp_flutter/screens/startpage.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,6 @@ Future<void> main() async {
   await Firebase.initializeApp();
   await EasyLocalization.ensureInitialized();
   await Hive.initFlutter();
-  await Hive.openBox(HiveConst.FAVORITE_BOX);
 
   runApp(
     EasyLocalization(

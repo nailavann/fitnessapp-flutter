@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:fitnessapp_flutter/screens/favoritepage.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/exercise/exercise.dart';
@@ -14,12 +15,19 @@ class GridList extends StatefulWidget {
 }
 
 class _GridListState extends State<GridList> {
-  final List listPage = ["exercises", "members", "gallery", "settings"];
+  final List listPage = [
+    "exercises",
+    "members",
+    "gallery",
+    "settings",
+    "favorite"
+  ];
   final List routingPage = [
     const Exercise(),
     const PersonsPage(),
     const GalleryPage(),
-    const SettingsPage()
+    const SettingsPage(),
+    const FavoritePage()
   ];
   @override
   Widget build(BuildContext context) {
@@ -30,7 +38,7 @@ class _GridListState extends State<GridList> {
           childAspectRatio: 3 / 2,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20),
-      itemCount: 4,
+      itemCount: 5,
       itemBuilder: (context, index) {
         return Padding(
             padding: const EdgeInsets.all(8.0),

@@ -19,6 +19,8 @@
      "not_registered" : "Not registered yet?",
      "pr_login" : "Logging in..",
      "pr_register" : "Registering..",
-     "pr_photo" : "Photo uploading..."
+     "pr_photo" : "Photo uploading...",
+     "favorite" : "Favorite"
+
      
 }

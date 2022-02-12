@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fitnessapp_flutter/const/hive_const.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../commons/gridview.dart';
@@ -21,6 +20,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    openBox();
     FirebaseFirestore.instance
         .collection("Person")
         .doc(user!.uid)
@@ -30,6 +30,10 @@ class _HomePageState extends State<HomePage> {
 
       setState(() {});
     });
+  }
+
+  void openBox() async {
+    Hive.openBox(user!.uid);
   }
 
   @override
