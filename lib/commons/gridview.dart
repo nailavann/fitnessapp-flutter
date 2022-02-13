@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../screens/exercise/exercise.dart';
 import '../screens/gallery/gallerypage.dart';
 import '../screens/persons.dart';
+import '../screens/profilpage.dart';
 import '../screens/settingspage.dart';
 
 class GridList extends StatefulWidget {
@@ -22,7 +23,8 @@ class _GridListState extends State<GridList> {
     "gallery",
     "settings",
     "favorite",
-    "feature"
+    "feature",
+    "profil"
   ];
   final List routingPage = [
     const Exercise(),
@@ -30,7 +32,8 @@ class _GridListState extends State<GridList> {
     const GalleryPage(),
     const SettingsPage(),
     const FavoritePage(),
-    const GenderPage()
+    const GenderPage(),
+    const ProfilPage()
   ];
   @override
   Widget build(BuildContext context) {

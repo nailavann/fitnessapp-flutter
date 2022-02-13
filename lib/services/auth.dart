@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:fitnessapp_flutter/models/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -8,6 +9,13 @@ import '../screens/loginpage.dart';
 class AuthService {
   static final FirebaseAuth _auth = FirebaseAuth.instance;
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  static Future<UserModel> getUserDetails() async {
+    DocumentSnapshot snap =
+        await _firestore.collection('Person').doc(_auth.currentUser!.uid).get();
+
+    return UserModel.fromSnap(snap);
+  }
 
   static Future<User?> signIn(String email, String password) async {
     try {
@@ -26,6 +34,7 @@ class AuthService {
     } catch (e) {
       debugPrint(e.toString());
     }
+    return null;
   }
 
   static signOut(BuildContext context) async {
@@ -57,5 +66,6 @@ class AuthService {
     } catch (e) {
       debugPrint(e.toString());
     }
+    return null;
   }
 }
