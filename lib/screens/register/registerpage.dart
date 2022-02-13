@@ -3,8 +3,8 @@ import 'package:fitnessapp_flutter/screens/startpage.dart';
 import 'package:flutter/material.dart';
 import 'package:sn_progress_dialog/sn_progress_dialog.dart';
 
-import '../services/auth.dart';
-import 'loginpage.dart';
+import '../../services/auth.dart';
+import '../login/loginpage.dart';
 
 late TextEditingController _emailController;
 late TextEditingController _passwordController;

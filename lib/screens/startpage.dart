@@ -1,10 +1,10 @@
 import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart';
-import 'package:fitnessapp_flutter/screens/registerpage.dart';
+import 'package:fitnessapp_flutter/screens/register/registerpage.dart';
 import 'package:flutter/material.dart';
 
-import 'loginpage.dart';
+import 'login/loginpage.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({Key? key}) : super(key: key);

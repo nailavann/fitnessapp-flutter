@@ -1,10 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:fitnessapp_flutter/screens/registerpage.dart';
+import 'package:fitnessapp_flutter/screens/register/registerpage.dart';
 import 'package:fitnessapp_flutter/screens/startpage.dart';
 import 'package:flutter/material.dart';
 
-import '../services/auth.dart';
-import 'homepage.dart';
+import '../../services/auth.dart';
+import '../homepage.dart';
 import 'package:sn_progress_dialog/sn_progress_dialog.dart';
 
 late TextEditingController _emailController;

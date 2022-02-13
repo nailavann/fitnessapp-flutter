@@ -4,7 +4,7 @@ import 'package:fitnessapp_flutter/models/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-import '../screens/loginpage.dart';
+import '../screens/login/loginpage.dart';
 
 class AuthService {
   static final FirebaseAuth _auth = FirebaseAuth.instance;
