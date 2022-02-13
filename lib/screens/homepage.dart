@@ -73,7 +73,10 @@ class _HomePageState extends State<HomePage> {
                     height: 10,
                   ),
                   username == null
-                      ? const Center(child: CircularProgressIndicator())
+                      ? const Center(
+                          child: CircularProgressIndicator(
+                          color: Colors.white,
+                        ))
                       : Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
