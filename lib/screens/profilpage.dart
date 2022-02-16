@@ -1,5 +1,8 @@
 import 'dart:ui';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fitnessapp_flutter/models/user_model.dart';
 import 'package:fitnessapp_flutter/services/auth.dart';
 import 'package:flutter/material.dart';
@@ -39,54 +42,63 @@ class _ProfilPageState extends State<ProfilPage> {
         FutureBuilder<UserModel>(
           future: AuthService.getUserDetails(),
           builder: (context, snapshot) {
-            UserModel user = snapshot.data!;
-            debugPrint(user.email);
+            UserModel? user = snapshot.data;
             if (snapshot.hasData) {
               return Center(
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      const SizedBox(
+                        height: 80,
+                      ),
                       const Text(
                         "Username",
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),
-                      TextFieldGenerator(text: user.username),
+                      TextFieldGenerator(text: user?.username),
                       const Text("Email",
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                       TextFieldGenerator(
-                        text: user.email,
+                        text: user?.email,
                       ),
                       const Text("Gender",
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                       TextFieldGenerator(
-                        text: user.gender,
+                        text: user?.gender,
                       ),
                       const Text("Age",
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                       TextFieldGenerator(
-                        text: user.age.toString(),
+                        text: user?.age.toString(),
                       ),
                       const Text("Height",
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                       TextFieldGenerator(
-                        text: user.height.toString(),
+                        text: user?.height.toString(),
                       ),
                       const Text("Weight",
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                       TextFieldGenerator(
-                        text: user.weight.toString(),
+                        text: user?.weight.toString(),
+                      ),
+                      const Text("Kayıt olma tarihi",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold)),
+                      TextFieldGenerator(
+                        text: DateFormat.yMMMd().format(user?.date.toDate()),
                       ),
                     ],
                   ),
@@ -94,7 +106,7 @@ class _ProfilPageState extends State<ProfilPage> {
               );
             }
 
-            return const CircularProgressIndicator();
+            return const Center(child: CircularProgressIndicator());
           },
         )
       ]),

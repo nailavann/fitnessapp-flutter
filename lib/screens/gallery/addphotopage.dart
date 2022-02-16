@@ -35,12 +35,6 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
         image: FileImage(File(_profileImage!.path)),
         height: MediaQuery.of(context).size.height * 0.4,
       );
-    } else {
-      if (_pickImage != null) {
-        return CircleAvatar(
-          backgroundImage: NetworkImage(_pickImage),
-        );
-      }
     }
   }
 

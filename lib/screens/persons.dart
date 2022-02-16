@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../services/person_service.dart';
@@ -13,12 +14,15 @@ class PersonsPage extends StatefulWidget {
 }
 
 class _PersonsPageState extends State<PersonsPage> {
+  final f = DateFormat('yyyy-MM-dd hh:mm');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
+        title: const Text("Üyeler"),
       ),
       extendBodyBehindAppBar: true,
       body: Stack(
@@ -48,6 +52,7 @@ class _PersonsPageState extends State<PersonsPage> {
                       itemCount: snapshot.data!.docs.length,
                       itemBuilder: (context, index) {
                         var person = snapshot.data!.docs[index];
+
                         return Center(
                           child: Padding(
                             padding: const EdgeInsets.only(
@@ -60,12 +65,28 @@ class _PersonsPageState extends State<PersonsPage> {
                                 color: Colors.white.withOpacity(.1),
                                 borderRadius: BorderRadius.circular(5),
                               ),
-                              child: Text(
-                                person['username'],
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16.0,
-                                ),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    child: Text(
+                                      person['username'][0],
+                                      style:
+                                          const TextStyle(color: Colors.white),
+                                    ),
+                                    backgroundColor:
+                                        Colors.white.withOpacity(.1),
+                                  ),
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  Text(
+                                    person['username'],
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16.0,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),

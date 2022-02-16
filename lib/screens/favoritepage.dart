@@ -42,51 +42,61 @@ class _FavoritePageState extends State<FavoritePage> {
             valueListenable:
                 Hive.box(FirebaseAuth.instance.currentUser!.uid).listenable(),
             builder: (context, value, child) {
-              return ListView.builder(
-                itemCount: value.length,
-                itemBuilder: (context, index) {
-                  var favoriteValue = value.getAt(index);
+              return value.values.isEmpty
+                  ? const Center(
+                      child: Text(
+                        "Favori hareketiniz yok",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16),
+                      ),
+                    )
+                  : ListView.builder(
+                      itemCount: value.length,
+                      itemBuilder: (context, index) {
+                        var favoriteValue = value.getAt(index);
 
-                  return Center(
-                    child: Padding(
-                      padding:
-                          const EdgeInsets.only(left: 8.0, right: 8, top: 15),
-                      child: Slidable(
-                        endActionPane: ActionPane(
-                            motion: const ScrollMotion(),
-                            extentRatio: 0.35,
-                            children: [
-                              SlidableAction(
-                                onPressed: (context) =>
-                                    showDialogss(context, index),
-                                backgroundColor:
-                                    const Color.fromARGB(0, 122, 120, 120),
-                                foregroundColor: Colors.white,
-                                icon: Icons.favorite,
-                                label: 'favorite'.tr(),
+                        return Center(
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                left: 8.0, right: 8, top: 15),
+                            child: Slidable(
+                              endActionPane: ActionPane(
+                                  motion: const ScrollMotion(),
+                                  extentRatio: 0.35,
+                                  children: [
+                                    SlidableAction(
+                                      onPressed: (context) =>
+                                          showDialogss(context, index),
+                                      backgroundColor: const Color.fromARGB(
+                                          0, 122, 120, 120),
+                                      foregroundColor: Colors.white,
+                                      icon: Icons.favorite,
+                                      label: 'favorite'.tr(),
+                                    ),
+                                  ]),
+                              child: Container(
+                                alignment: Alignment.center,
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 19.0, horizontal: 22.0),
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(.1),
+                                  borderRadius: BorderRadius.circular(5),
+                                ),
+                                child: Text(
+                                  favoriteValue,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16.0,
+                                  ),
+                                ),
                               ),
-                            ]),
-                        child: Container(
-                          alignment: Alignment.center,
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 19.0, horizontal: 22.0),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(.1),
-                            borderRadius: BorderRadius.circular(5),
-                          ),
-                          child: Text(
-                            favoriteValue,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 16.0,
                             ),
                           ),
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              );
+                        );
+                      },
+                    );
             },
           ),
         ],
