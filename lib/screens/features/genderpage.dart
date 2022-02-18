@@ -73,9 +73,14 @@ class _GenderPageState extends State<GenderPage> {
                                         : Colors.grey[400],
                                   )),
                             ),
+                            const SizedBox(
+                              height: 10,
+                            ),
                             const Text(
                               "Man",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w300),
                             )
                           ],
                         ),
@@ -103,9 +108,14 @@ class _GenderPageState extends State<GenderPage> {
                                 ),
                               ),
                             ),
+                            const SizedBox(
+                              height: 10,
+                            ),
                             const Text(
                               "Woman",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w300),
                             )
                           ],
                         ),

@@ -2,7 +2,6 @@ import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:fitnessapp_flutter/screens/gallery/gallery_detail_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -38,7 +37,7 @@ class _GalleryPageState extends State<GalleryPage> {
                   fit: BoxFit.cover),
             ),
             child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+              filter: ImageFilter.blur(sigmaX: 17, sigmaY: 17),
               child: Container(
                 color: Colors.white.withOpacity(.123),
               ),
@@ -71,25 +70,35 @@ class _GalleryPageState extends State<GalleryPage> {
                               const SizedBox(
                                 height: 20,
                               ),
-                              InkWell(
-                                onTap: () {
-                                  Navigator.push(context, MaterialPageRoute(
-                                    builder: (context) {
-                                      return GalleryDetail(photo: photo);
-                                    },
-                                  ));
-                                },
-                                child: Container(
-                                  alignment: Alignment.topCenter,
-                                  width: size.width * 0.9,
-                                  height: size.height * 0.5,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.white),
-                                    image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: NetworkImage(photo['photo']),
-                                    ),
+                              Container(
+                                alignment: Alignment.topCenter,
+                                width: size.width * 0.9,
+                                height: size.height * 0.5,
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.white),
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: NetworkImage(photo['photo']),
                                   ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  photo['desc'],
+                                  style: const TextStyle(
+                                      color: Colors.white, fontSize: 15),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.bottomRight,
+                                child: Text(
+                                  DateFormat.yMMMd()
+                                      .format((photo['date']).toDate()),
+                                  style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w300),
                                 ),
                               ),
                               const SizedBox(
