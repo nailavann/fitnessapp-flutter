@@ -13,15 +13,19 @@ class PhotoService {
 
   String photoUrl = "";
 
-  Future<Status> addPhoto(XFile xFile, String username) async {
+  Future<Status> addPhoto(XFile xFile, String username, String desc) async {
     var ref = _firebaseFirestore.collection("Photo");
 
     photoUrl = await _storageService.uploadPhoto(File(xFile.path));
 
-    var document = await ref
-        .add({'photo': photoUrl, 'username': username, 'date': DateTime.now()});
+    var document = await ref.add({
+      'photo': photoUrl,
+      'username': username,
+      'desc': desc,
+      'date': DateTime.now()
+    });
 
-    return Status(id: document.id, image: photoUrl);
+    return Status(id: document.id, image: photoUrl, desc: desc);
   }
 
   static Stream<QuerySnapshot> viewPhoto() {

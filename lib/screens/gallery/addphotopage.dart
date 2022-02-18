@@ -28,6 +28,7 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
   String? name;
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  TextEditingController descController = TextEditingController();
 
   Widget? imagePlace() {
     if (_profileImage != null) {
@@ -117,15 +118,46 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
                 const SizedBox(
                   height: 20,
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(
+                        horizontal: 10, vertical: 10),
+                    child: TextField(
+                      controller: descController,
+                      cursorColor: Colors.white,
+                      style: const TextStyle(color: Colors.white),
+                      decoration: const InputDecoration(
+                          hintText: ("Açıklama giriniz"),
+                          hintStyle: TextStyle(color: Colors.white),
+                          disabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white),
+                          )),
+                    ),
+                  ),
+                ),
                 InkWell(
                   onTap: () async {
-                    pr.show(max: 1000, msg: "pr_photo".tr());
-                    await _photoService
-                        .addPhoto(_profileImage, name.toString())
-                        .then((value) =>
-                            Fluttertoast.showToast(msg: "Fotoğraf eklendi!"));
-                    Navigator.pop(context);
-                    pr.close();
+                    if (_profileImage != null &&
+                        descController.text.isNotEmpty) {
+                      pr.show(max: 1000, msg: "pr_photo".tr());
+                      await _photoService
+                          .addPhoto(_profileImage, name.toString(),
+                              descController.text)
+                          .then((value) =>
+                              Fluttertoast.showToast(msg: "Fotoğraf eklendi!"));
+                      Navigator.pop(context);
+                      pr.close();
+                    } else {
+                      Fluttertoast.showToast(
+                          msg: "Gerekli kısımları doldurunuz!");
+                    }
                   },
                   child: Container(
                     child: Padding(

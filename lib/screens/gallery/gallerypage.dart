@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:fitnessapp_flutter/screens/gallery/gallery_detail_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -70,16 +71,23 @@ class _GalleryPageState extends State<GalleryPage> {
                               const SizedBox(
                                 height: 20,
                               ),
-                              Container(
-                                alignment: Alignment.topCenter,
-                                width: size.width * 0.9,
-                                height: size.height * 0.5,
-                                decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.white),
-                                  image: DecorationImage(
-                                    fit: BoxFit.cover,
-                                    image: NetworkImage(
-                                      photo['photo'],
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(context, MaterialPageRoute(
+                                    builder: (context) {
+                                      return GalleryDetail(photo: photo);
+                                    },
+                                  ));
+                                },
+                                child: Container(
+                                  alignment: Alignment.topCenter,
+                                  width: size.width * 0.9,
+                                  height: size.height * 0.5,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.white),
+                                    image: DecorationImage(
+                                      fit: BoxFit.cover,
+                                      image: NetworkImage(photo['photo']),
                                     ),
                                   ),
                                 ),
