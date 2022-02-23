@@ -35,7 +35,7 @@ class _ProfilPhotoState extends State<ProfilPhoto> {
     ProgressDialog pr = ProgressDialog(context: context);
 
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
