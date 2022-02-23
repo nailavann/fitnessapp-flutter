@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fitnessapp_flutter/screens/favoritepage.dart';
 import 'package:fitnessapp_flutter/screens/features/genderpage.dart';
+import 'package:fitnessapp_flutter/screens/features/profilphoto.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/exercise/exercise.dart';
@@ -32,7 +33,7 @@ class _GridListState extends State<GridList> {
     const GalleryPage(),
     const SettingsPage(),
     const FavoritePage(),
-    const GenderPage(),
+    const ProfilPhoto(),
     const ProfilPage()
   ];
   @override

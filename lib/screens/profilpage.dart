@@ -1,8 +1,6 @@
 import 'dart:ui';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fitnessapp_flutter/models/user_model.dart';
 import 'package:fitnessapp_flutter/services/auth.dart';
 import 'package:flutter/material.dart';
@@ -98,7 +96,7 @@ class _ProfilPageState extends State<ProfilPage> {
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                       TextFieldGenerator(
-                        text: DateFormat.yMMMd().format(user?.date.toDate()),
+                        text: DateFormat.yMd().format(user?.date.toDate()),
                       ),
                     ],
                   ),

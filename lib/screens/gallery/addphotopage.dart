@@ -148,7 +148,7 @@ class _AddPhotoPageState extends State<AddPhotoPage> {
                         descController.text.isNotEmpty) {
                       pr.show(max: 1000, msg: "pr_photo".tr());
                       await _photoService
-                          .addPhoto(_profileImage, name.toString(),
+                          .addGalleryPhoto(_profileImage, name.toString(),
                               descController.text)
                           .then((value) =>
                               Fluttertoast.showToast(msg: "Fotoğraf eklendi!"));

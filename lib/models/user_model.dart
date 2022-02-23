@@ -10,6 +10,7 @@ class UserModel {
   int? weight;
   int? height;
   var date;
+  String? photoUrl;
   UserModel(
       {this.username,
       this.email,
@@ -17,7 +18,8 @@ class UserModel {
       this.age,
       this.weight,
       this.height,
-      this.date});
+      this.date,
+      this.photoUrl});
 
   factory UserModel.fromSnap(DocumentSnapshot snap) {
     var snapshot = snap.data() as Map<String, dynamic>;
@@ -28,6 +30,7 @@ class UserModel {
         age: snapshot['age']?.toInt() ?? 0,
         weight: snapshot['weight']?.toInt() ?? 0,
         height: snapshot['height']?.toInt() ?? 0,
-        date: snapshot['registerdate']);
+        date: snapshot['registerdate'],
+        photoUrl: snapshot['photoUrl']);
   }
 }

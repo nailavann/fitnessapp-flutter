@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,9 @@ class GalleryPage extends StatefulWidget {
 }
 
 class _GalleryPageState extends State<GalleryPage> {
+  String? username;
+  String? photoUrl;
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -56,16 +60,24 @@ class _GalleryPageState extends State<GalleryPage> {
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
-                              Container(
-                                alignment: Alignment.center,
-                                width: size.width * 0.9,
-                                height: size.height * 0.04,
-                                child: Text(
-                                  photo["username"],
-                                  style: const TextStyle(color: Colors.white),
-                                ),
-                                decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.white)),
+                              Row(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(150),
+                                    child: Image.network(
+                                      photo['profilPhotoUrl'].toString(),
+                                      height: 50,
+                                      width: 50,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  Text(
+                                    photo["username"],
+                                    style: const TextStyle(color: Colors.white),
+                                  ),
+                                ],
                               ),
                               const SizedBox(
                                 height: 20,
@@ -93,7 +105,7 @@ class _GalleryPageState extends State<GalleryPage> {
                               Align(
                                 alignment: Alignment.bottomRight,
                                 child: Text(
-                                  DateFormat.yMMMd()
+                                  DateFormat.yMd()
                                       .format((photo['date']).toDate()),
                                   style: const TextStyle(
                                       color: Colors.white,
