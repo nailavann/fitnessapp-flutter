@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fitnessapp_flutter/screens/features/genderpage.dart';
+import 'package:fitnessapp_flutter/screens/login/loginpage.dart';
 import 'package:fitnessapp_flutter/services/photo_service.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -69,6 +70,7 @@ class _ProfilPhotoState extends State<ProfilPhoto> {
                 ),
               ],
             ),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
@@ -82,7 +84,7 @@ class _ProfilPhotoState extends State<ProfilPhoto> {
                               .whenComplete(() => pr.close());
                           Navigator.push(context, MaterialPageRoute(
                             builder: (context) {
-                              return const GenderPage();
+                              return const LoginPage();
                             },
                           ));
                         } else {

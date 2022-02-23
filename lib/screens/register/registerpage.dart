@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:fitnessapp_flutter/screens/register/profilphoto.dart';
 import 'package:fitnessapp_flutter/screens/startpage.dart';
 import 'package:flutter/material.dart';
 import 'package:sn_progress_dialog/sn_progress_dialog.dart';
@@ -162,7 +163,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                   : Navigator.pushAndRemoveUntil(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => const LoginPage(),
+                                        builder: (context) =>
+                                            const ProfilPhoto(),
                                       ),
                                       (route) => false))
                               .whenComplete(() => pr.close());
